@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+
+    <main id="container">
+
+        <section id="img">
+            <img src="./img/ilustracao.svg">
+        </section>
+
+        <section id="calculadora">
+            <form id="form">
+
+                <h1 id="title"> 
+                    Calculadora - IMC 
+                </h1>
+
+                <div class="input-box">
+                    <label for="peso">
+                        Peso em Kg
+                    </label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-scale" style="color: #5a189a;"></i>
+                        <input type="number" id="peso" name="peso" required>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="altura">
+                        Altura em metros
+                    </label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler" style="color: #5a189a;"></i>
+                        <input type="number" step="0.01" id="altura" name="altura" required>
+                        <span>
+                            M
+                        </span>
+                    </div>
+                </div>
+
+                <button id="calcular">
+                    Calcular
+                </button>
+            </form>
+
+            <div id="infos" class="hidden">
+
+                <div id="resultado">
+                    <div id="imc">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+
+                    <div id="descricao">
+                        <span></span>
+                    </div>  
+                </div>
+
+                <div id="mais_info">
+                    <a href="https://www.saude.rj.gov.br/obesidade/noticias/2019/03/imc-voce-sabe-o-que-o-indice-de-massa-corporal-diz-sobre-sua-saude">
+                        Mais informações sobre o IMC
+                        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #5a189a;"></i>
+                    </a>
+                </div>
+
+            </div> 
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
